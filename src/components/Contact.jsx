@@ -17,11 +17,43 @@ const [form, setForm] = useState({
 const [loading, setLoading ] = useState(false);
 
 const handleChange = (e) => {
+  const { name, value } = e.target;
 
+  setForm({ ...form, [name]: value })
 }
 
 const handleSubmit = (e) => {
+  e.preventDefault();
+  setLoading(true)
 
+  emailjs.send(
+    "service_py1y43h", 
+    "template_ekzf7t9", 
+    {
+      from_name: form.name,
+      to_name: "Vladislav",
+      from_email: form.email,
+      to_email: "vladmorilov24@gmail.com",
+      message: form.message,
+    },
+    "WS9oS0eSIKVqR3W4V",
+  )
+  .then(() => {
+    setLoading(false);
+    alert("Thank you. I will get back to you as soon as possible.")
+
+    setForm({
+      name: "",
+      emmal: "",
+      message: "",
+    })
+  }, (error) => {
+    setLoading(false)
+
+    console.log(error);
+
+    alert("Something went wrong.")
+  })
 }
 
   return (
