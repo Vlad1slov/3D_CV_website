@@ -20,17 +20,26 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import bootstrap from "./tech/bootstrap.png";
+import restAPI from "./tech/restAPI.png"
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import BookLibrary from "./BookLibrary.jpg";
+import Converter from "./Converter.jpg";
+import Cryptoverse from "./Cryptoverse.jpg";
+import TravelAdvisor from "./TravelAdvisor.jpg";
+
+import Chess from "./Chess.jpg";
+import SportActivities from "./SportActivities.jpg"
+import Computer from "./Computer.jpg";
 
 export {
+  bootstrap,
+  restAPI,
   logo,
   backend,
   creator,
@@ -56,7 +65,11 @@ export {
   shopify,
   starbucks,
   tesla,
-  carrent,
-  jobit,
-  tripguide,
+  BookLibrary,
+  Converter,
+  Cryptoverse,
+  TravelAdvisor,
+  Chess,
+  Computer,
+  SportActivities,
 };

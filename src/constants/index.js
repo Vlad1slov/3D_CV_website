@@ -4,7 +4,8 @@ import {
     creator,
     web,
     javascript,
-    typescript,
+    restAPI,
+    bootstrap,
     html,
     css,
     reactjs,
@@ -14,15 +15,18 @@ import {
     mongodb,
     git,
     figma,
-    docker,
     meta,
     starbucks,
     tesla,
     shopify,
-    carrent,
-    jobit,
-    tripguide,
+    BookLibrary,
+    Converter,
+    Cryptoverse,
+    TravelAdvisor,
     threejs,
+    SportActivities,
+    Chess,
+    Computer,
   } from "../assets";
   
   export const navLinks = [
@@ -73,8 +77,8 @@ import {
       icon: javascript,
     },
     {
-      name: "TypeScript",
-      icon: typescript,
+      name: "Bootstrap",
+      icon: bootstrap,
     },
     {
       name: "React JS",
@@ -109,44 +113,31 @@ import {
       icon: figma,
     },
     {
-      name: "docker",
-      icon: docker,
+      name: "restAPI",
+      icon: restAPI,
     },
   ];
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
+      title: "JavaScript",
+      company_name: "Self Education",
       icon: starbucks,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "April 2022 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "My programming journey started with learning JavaScript on the FreeCodeCamp website. This experience sparked my passion for programming and I decided to turn it into a career.",
+        "I enrolled in several free courses and watched a multitude of tutorials on YouTube.",
+        "Web applications development on vanilla.js.",
+        "Continue diving into documentation and implement my knowledge in practical projects.",
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
+      title: "React.js Developer",
+      company_name: "Self Education",
       icon: tesla,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      date: "March 2023 - Present",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -156,12 +147,24 @@ import {
     },
     {
       title: "Full stack Developer",
-      company_name: "Meta",
+      company_name: "Self Education",
       icon: meta,
       iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      date: "June 2023 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
+        "Developing and maintaining web applications using Node.js and other related technologies.",
+        "Creating various API servers using express.js. Using Rest API to receive data and implement it into projects.",
+        "Continue diving into documentation and implement my knowledge in practical projects."
+      ],
+    },
+    {
+      title: "Web Developer",
+      company_name: "Team Challenge",
+      icon: shopify,
+      iconBg: "#383E56",
+      date: "Jan 2024 - Present",
+      points: [
+        "Developing and maintaining web application using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
         "Participating in code reviews and providing constructive feedback to other developers.",
@@ -172,84 +175,38 @@ import {
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
+        "Chess was my first passion, I devoted 2 years of my life to it, and achieved good results. From victories in student tournaments to 10th place in the national youth competition.",
+      name: "Chess",
+      image: Chess,
     },
     {
       testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
+        "I am a very active person. I like to play all kinds of sports and I do it well. I also went to table tennis and football clubs. Active leisure keeps my mind clean and gives me energy.",
+      name: "Sport Activities",
+      image: SportActivities,
     },
     {
       testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
+        "In my spare time, I like to improve my programming skills and play computer games with friends and we also like to gather to play board games.",
+      name: "Computer Games",
       designation: "CTO",
       company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
+      image: Computer,
     },
   ];
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Cryptocurrency Converter",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Data analysis about cryptocurrency, news that may affect the market. Project based on fetching API from external source methods",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: carrent,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Job IT",
-      description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: jobit,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
+          name: "restAPI",
           color: "green-text-gradient",
         },
         {
@@ -257,8 +214,53 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
+      image: Cryptoverse,
+      source_code_link: "https://github.com/Vlad1slov/Cryptocurrencies-react-API",
+      source_website_link: "https://cryptocurrencies-react-api-vladislavs-projects-46f80dfa.vercel.app/",
+    },
+    {
+      name: "Book Library",
+      description:
+        "Library, using a local API to generate a book with using redux",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "express.js",
+          color: "green-text-gradient",
+        },
+        {
+          name: "redux",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: BookLibrary,
+      source_code_link: "https://github.com/Vlad1slov/Redux-Library-project",
+      source_website_link: "https://cryptocurrencies-react-api-vladislavs-projects-46f80dfa.vercel.app/",
+    },
+    {
+      name: "Travel Advisor",
+      description:
+        "Travel advisor working with Google Maps API. Project based on fetching API from external source methods",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "GoogleMapsAPI",
+          color: "green-text-gradient",
+        },
+        {
+          name: "material-ui",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: TravelAdvisor,
       source_code_link: "https://github.com/",
+      source_website_link: "https://cryptocurrencies-react-api-vladislavs-projects-46f80dfa.vercel.app/",
     },
   ];
   
